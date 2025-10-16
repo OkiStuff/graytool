@@ -26,7 +26,7 @@ void cli_help(const char* executable)
 	    "Options:\n"
 	    "\t-h/--help\t\t\tShow this message\n"
 	    "\t-v/--version\t\t\tShow version\n"
-	    "\t-o/--output-file <output file>\tSet output file\n\n"
+	    "\t-o/--output <output file>\tSet output file\n\n"
 	    "\t--average\t\t\t\t\tUse Average method\n"
 	    "\t--luminance601 (default)\t\t\tUse Luminance (Rec.601) method\n"
 	    "\t--luminance709\t\t\t\t\tUse Luminance (Rec.709) method\n"
