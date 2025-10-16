@@ -28,11 +28,15 @@ static const char method_simple_names[][20] =
 void generator_method_to_simple_name(char* out, size_t out_size, generator_method_descriptor* method)
 {
 	const char* name = method_simple_names[method->method];
-	strncpy_s(out, out_size, name, out_size - 1);
 
 	if (method->method == GENERATOR_METHOD_LUMINANCE_CUSTOM)
 	{
 		snprintf(out, out_size, name, method->custom_weights[0], method->custom_weights[1], method->custom_weights[2]);
+	}
+
+	else
+	{
+		strncpy_s(out, out_size, name, out_size - 1);
 	}
 }
 
