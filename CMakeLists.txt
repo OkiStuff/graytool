@@ -11,3 +11,7 @@ src/image.c
 )
 
 add_executable(graytool ${SRC})
+
+if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+	target_link_options(graytool PRIVATE -static -static-libgcc)
+endif()

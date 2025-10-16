@@ -86,11 +86,6 @@ void generator_generate_grayscale(unsigned char* out, image* image, generator_me
 			out[R] = value;
 			out[G] = value;
 			out[B] = value;
-
-			if (image->bpp == 4)
-			{
-				out[A] = 255;
-			}
 		}
 	}
 }

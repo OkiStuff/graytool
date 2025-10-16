@@ -9,14 +9,14 @@
 image image_read(const char* filename)
 {
 	int w, h, bpp;
-	unsigned char* data = stbi_load(filename, &w, &h, &bpp, 3);
+	unsigned char* data = stbi_load(filename, &w, &h, &bpp, 4);
 
 	return (image)
 	{
 		.data = data,
 		.w = w,
 		.h = h,
-		.bpp = 3,//bpp
+		.bpp = 4,//bpp
 	};
 }
 
