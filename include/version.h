@@ -1,0 +1,6 @@
+#ifndef GRAYTOOL_VERSION_H
+#define GRAYTOOL_VERSION_H
+
+#define GRAYTOOL_VERSION "v1.0"
+
+#endif // GRAYTOOL_VERSION_H
